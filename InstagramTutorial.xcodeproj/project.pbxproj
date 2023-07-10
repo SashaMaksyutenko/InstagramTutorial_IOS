@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F11564532A5C353D002769F8 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11564522A5C353D002769F8 /* MainTabView.swift */; };
+		F11564552A5C38AE002769F8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11564542A5C38AE002769F8 /* ProfileView.swift */; };
+		F11564582A5C708C002769F8 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11564572A5C708C002769F8 /* UserStatView.swift */; };
 		F1C377E62A5C3106009CEC7A /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C377E52A5C3106009CEC7A /* InstagramTutorialApp.swift */; };
 		F1C377E82A5C3106009CEC7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C377E72A5C3106009CEC7A /* ContentView.swift */; };
 		F1C377EA2A5C3106009CEC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C377E92A5C3106009CEC7A /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		F11564522A5C353D002769F8 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		F11564542A5C38AE002769F8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F11564572A5C708C002769F8 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		F1C377E22A5C3106009CEC7A /* InstagramTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C377E52A5C3106009CEC7A /* InstagramTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramTutorialApp.swift; sourceTree = "<group>"; };
 		F1C377E72A5C3106009CEC7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 		F11564492A5C31D2002769F8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				F11564562A5C704F002769F8 /* Components */,
 				F115644B2A5C3276002769F8 /* Authentication */,
 				F115644C2A5C329D002769F8 /* Feed */,
 				F115644D2A5C32AE002769F8 /* Profile */,
@@ -94,6 +99,7 @@
 		F115644D2A5C32AE002769F8 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F11564542A5C38AE002769F8 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				F11564522A5C353D002769F8 /* MainTabView.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F11564562A5C704F002769F8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F11564572A5C708C002769F8 /* UserStatView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F1C377D92A5C3105009CEC7A = {
@@ -236,8 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F11564552A5C38AE002769F8 /* ProfileView.swift in Sources */,
 				F1C377E82A5C3106009CEC7A /* ContentView.swift in Sources */,
 				F1C377E62A5C3106009CEC7A /* InstagramTutorialApp.swift in Sources */,
+				F11564582A5C708C002769F8 /* UserStatView.swift in Sources */,
 				F11564532A5C353D002769F8 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
