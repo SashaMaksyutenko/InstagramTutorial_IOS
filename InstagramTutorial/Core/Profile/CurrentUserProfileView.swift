@@ -1,27 +1,27 @@
 //
-//  ProfileView.swift
+//  CurrentUserProfileView.swift
 //  InstagramTutorial
 //
-//  Created by Sasha Maksyutenko on 10.07.2023.
+//  Created by Sasha Maksyutenko on 11.07.2023.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
-    let user:User
+struct CurrentUserProfileView: View {
     private let gridItems:[GridItem]=[
         .init(.flexible(),spacing: 1),
         .init(.flexible(),spacing: 1),
         .init(.flexible(),spacing: 1)
     ]
     var body: some View {
+        NavigationStack{
             ScrollView
             {
                 // header
                 VStack(spacing:10){
                     // pick and stats
                     HStack{
-                        Image(user.profileImageUrl ?? "")
+                        Image("black panther 1")
                             .resizable()
                             .scaledToFill()
                             .frame(width: 80,height: 80)
@@ -36,15 +36,11 @@ struct ProfileView: View {
                     .padding(.horizontal)
                     // name and bio
                     VStack(alignment: .leading,spacing: 4){
-                        if let fullname=user.fullname{
-                            Text(fullname)
-                                .font(.footnote)
-                                .fontWeight(.semibold)
-                        }
-                        if let bio=user.bio{
-                            Text(bio)
-                                .font(.footnote)
-                        }
+                        Text("Chadwick Bozeman")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                        Text("Wakanda forever")
+                            .font(.footnote)
                     }
                     .frame(maxWidth:.infinity,alignment: .leading)
                     .padding(.horizontal)
@@ -73,10 +69,22 @@ struct ProfileView: View {
             }
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                            .foregroundColor(.black)
+                    }
+                }
+            }
+        }
     }
 }
-struct ProfileView_Previews: PreviewProvider {
+
+struct CurrentUserProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(user: User.MOCK_USERS[0])
+        CurrentUserProfileView()
     }
 }
