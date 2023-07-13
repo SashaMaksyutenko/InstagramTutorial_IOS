@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CreateUserNameView: View {
-    @State private var username=""
     @Environment (\.dismiss) var dismiss
+    @EnvironmentObject var viewModel:RegistrationViewModel
     var body: some View {
         VStack{
             Text("Create username")
@@ -21,7 +21,7 @@ struct CreateUserNameView: View {
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal,24)
-            TextField("Username", text: $username)
+            TextField("Username", text: $viewModel.username)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())
             NavigationLink {
