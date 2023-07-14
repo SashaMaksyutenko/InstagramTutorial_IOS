@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 struct User:Identifiable,Hashable,Codable{
     let id: String
     var username:String
@@ -13,7 +14,10 @@ struct User:Identifiable,Hashable,Codable{
     var fullname:String?
     var bio:String?
     let email:String
-
+    var isCurrentUser:Bool{
+        guard var currentUid=Auth.auth().currentUser?.uid else {return false}
+        return currentUid==id
+    }
 }
 extension User{
     static var MOCK_USERS:[User]=[
