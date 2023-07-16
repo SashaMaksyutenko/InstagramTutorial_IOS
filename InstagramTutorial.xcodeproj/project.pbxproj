@@ -40,6 +40,8 @@
 		F1AAD7082A61876C00F3B549 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AAD7072A61876C00F3B549 /* EditProfileView.swift */; };
 		F1AAD70C2A61901700F3B549 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AAD70B2A61901700F3B549 /* EditProfileViewModel.swift */; };
 		F1AAD70E2A61C88300F3B549 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AAD70D2A61C88300F3B549 /* ImageUploader.swift */; };
+		F1AAD7112A64527400F3B549 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F1AAD7102A64527400F3B549 /* Kingfisher */; };
+		F1AAD7132A64536000F3B549 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AAD7122A64536000F3B549 /* CircularProfileImageView.swift */; };
 		F1C377E62A5C3106009CEC7A /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C377E52A5C3106009CEC7A /* InstagramTutorialApp.swift */; };
 		F1C377E82A5C3106009CEC7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C377E72A5C3106009CEC7A /* ContentView.swift */; };
 		F1C377EA2A5C3106009CEC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C377E92A5C3106009CEC7A /* Assets.xcassets */; };
@@ -76,6 +78,7 @@
 		F1AAD7072A61876C00F3B549 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		F1AAD70B2A61901700F3B549 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		F1AAD70D2A61C88300F3B549 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		F1AAD7122A64536000F3B549 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		F1C377E22A5C3106009CEC7A /* InstagramTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C377E52A5C3106009CEC7A /* InstagramTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramTutorialApp.swift; sourceTree = "<group>"; };
 		F1C377E72A5C3106009CEC7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 				F11564842A5F4C97002769F8 /* FirebaseStorage in Frameworks */,
 				F11564802A5F4C97002769F8 /* FirebaseFirestore in Frameworks */,
 				F11564822A5F4C97002769F8 /* FirebaseFirestoreSwift in Frameworks */,
+				F1AAD7112A64527400F3B549 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +221,7 @@
 				F11564572A5C708C002769F8 /* UserStatView.swift */,
 				F11564642A5D9B4E002769F8 /* IGTextFieldModifier.swift */,
 				F11564722A5EDA51002769F8 /* PostGridView.swift */,
+				F1AAD7122A64536000F3B549 /* CircularProfileImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -359,6 +364,7 @@
 				F115647F2A5F4C97002769F8 /* FirebaseFirestore */,
 				F11564812A5F4C97002769F8 /* FirebaseFirestoreSwift */,
 				F11564832A5F4C97002769F8 /* FirebaseStorage */,
+				F1AAD7102A64527400F3B549 /* Kingfisher */,
 			);
 			productName = InstagramTutorial;
 			productReference = F1C377E22A5C3106009CEC7A /* InstagramTutorial.app */;
@@ -390,6 +396,7 @@
 			mainGroup = F1C377D92A5C3105009CEC7A;
 			packageReferences = (
 				F115647C2A5F4C97002769F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F1AAD70F2A64527400F3B549 /* XCRemoteSwiftPackageReference "kingfisher" */,
 			);
 			productRefGroup = F1C377E32A5C3106009CEC7A /* Products */;
 			projectDirPath = "";
@@ -445,6 +452,7 @@
 				F11564582A5C708C002769F8 /* UserStatView.swift in Sources */,
 				F115645A2A5C962E002769F8 /* FeedView.swift in Sources */,
 				F11564532A5C353D002769F8 /* MainTabView.swift in Sources */,
+				F1AAD7132A64536000F3B549 /* CircularProfileImageView.swift in Sources */,
 				F1AAD7062A61667000F3B549 /* SearchViewModel.swift in Sources */,
 				F11564692A5DA57B002769F8 /* CreatePasswordView.swift in Sources */,
 				F1AAD7022A61628B00F3B549 /* UserSevice.swift in Sources */,
@@ -575,7 +583,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"InstagramTutorial/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -603,7 +611,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"InstagramTutorial/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -656,6 +664,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		F1AAD70F2A64527400F3B549 /* XCRemoteSwiftPackageReference "kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -678,6 +694,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F115647C2A5F4C97002769F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		F1AAD7102A64527400F3B549 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1AAD70F2A64527400F3B549 /* XCRemoteSwiftPackageReference "kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
